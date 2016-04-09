@@ -158,34 +158,9 @@ minetest.register_node("extinction:torch_extinct", {
 	description = "Torch",
 	drawtype = "torchlike",
 	tiles = {
-		{
-			name = "extinction_torch_on_floor.png",
-			animation = {
-				type = "vertical_frames",
-				aspect_w = 16,
-				aspect_h = 16,
-				length = 3.0
-			},
-		},
-		{
-			name="extinction_torch_on_ceiling.png",
-			animation = {
-				type = "vertical_frames",
-				aspect_w = 16,
-				aspect_h = 16,
-				length = 3.0
-			},
-		},
-		{
-			name="extinction_torch.png",
-			animation = {
-				type = "vertical_frames",
-				aspect_w = 16,
-				aspect_h = 16,
-				length = 3.0
-			},
-		},
-	},
+		{name = "extinction_torch_on_floor.png",},
+		{name="extinction_torch_on_ceiling.png",},
+		{name="extinction_torch.png",},},
 	inventory_image = "extinction_torch_on_floor.png",
 	wield_image = "extinction_torch_on_floor.png",
 	paramtype = "light",

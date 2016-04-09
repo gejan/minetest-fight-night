@@ -25,25 +25,40 @@ minetest.register_node("technic_light:radioluminescent_stick", {
 	drop = "technic_light:radioluminescent_stick"
 })
 
+minetest.register_node("technic_light:radioluminescent", {
+	description = "Radioluminescent Stone",
+	groups = {cracky=2,},
+	sunlight_propagates = true,
+	light_source = default.LIGHT_MAX - 2,
+	paramtype = "light",
+	drawtype = "allfaces",
+	tiles = {"technic_light_radioluminescent.png"},
+	sounds = default.node_sound_stone_defaults(),
+	drop = "technic_light:radioluminescent", 
+})
+
+
 minetest.register_node("technic_light:phosphorescent_day", {
 	description = "Phosphorescent Stone",
-	groups = {cracky=2},
+	groups = {cracky=2, not_in_creative_inventory=1},
 	sunlight_propagates = false,
 	paramtype = "light",
 	drawtype = "allfaces",
 	tiles = {"technic_light_phosphorescent.png"},
 	sounds = default.node_sound_stone_defaults(),
+	drop = "technic_light:phosphorescent_night_off", 
 })
 
 minetest.register_node("technic_light:phosphorescent_night_on", {
 	description = "Phosphorescent Stone",
-	groups = {cracky=2},
+	groups = {cracky=2, not_in_creative_inventory=1},
 	sunlight_propagates = false,
 	paramtype = "light",
 	light_source = technic_light_switch - 1,
 	drawtype = "allfaces",
 	tiles = {"technic_light_phosphorescent.png"},
 	sounds = default.node_sound_stone_defaults(),
+	drop = "technic_light:phosphorescent_night_off", 
 })
 
 minetest.register_node("technic_light:phosphorescent_night_off", {
@@ -54,6 +69,7 @@ minetest.register_node("technic_light:phosphorescent_night_off", {
 	drawtype = "allfaces",
 	tiles = {"technic_light_phosphorescent.png"},
 	sounds = default.node_sound_stone_defaults(),
+	drop = "technic_light:phosphorescent_night_off", 
 })
 
 
