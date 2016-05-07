@@ -16,7 +16,7 @@ function(player)
 	end
 	persistent_player_attributes.set_value(player,'bewarethedark_sanity',value)
 end, 
-nil, nil, nil, 10)
+nil, nil, nil, 5)
 
 
 
