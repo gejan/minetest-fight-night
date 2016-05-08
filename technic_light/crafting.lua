@@ -38,6 +38,38 @@ minetest.register_craft({
         }
 })
 
+minetest.register_craft({
+	output = "technic_light:spotlight",
+	recipe = {
+        {'technic:stainless_steel_ingot', 'moreores:silver_ingot', 'technic:stainless_steel_ingot'},
+        {'default:obsidian_glass', 'technic:machine_casing', 'moreores:silver_ingot'},
+        {'technic:stainless_steel_ingot', 'technic:hv_cable0', 'technic:stainless_steel_ingot'},
+        }
+})
+
+minetest.register_craft({
+	output = "technic_light:mv_lamp",
+	recipe = {
+        {'technic:stainless_steel_ingot', 'default:glass', 'technic:stainless_steel_ingot'},
+        {'default:glass', 'default:mese_crystal', 'default:glass'},
+        {'technic:stainless_steel_ingot', 'technic:mv_cable0', 'technic:stainless_steel_ingot'},
+        }
+})
+
+
+minetest.register_craft({
+	output = "technic_light:lv_lamp",
+	recipe = {
+        {'technic:carbon_steel_ingot', 'default:glass', 'technic:carbon_steel_ingot'},
+        {'default:glass', 'default:mese_crystal_fragment', 'default:glass'},
+        {'technic:carbon_steel_ingot', 'technic:lv_cable0', 'technic:carbon_steel_ingot'},
+        }
+})
+
+
+
+
+
 
 technic.register_alloy_recipe({input = {'technic:zinc_dust', 'technic:sulfur_dust'}, output = 'technic_light:zinc_sulphide 2', time = 6})
 

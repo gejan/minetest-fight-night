@@ -49,6 +49,7 @@ minetest.register_node("technic_light:"..node_name.."_on", {
 	paramtype = "light",
 	light_source = light,
 	drop = "technic_light:"..node_name, 
+	technic_disabled_machine_name = "technic_light:"..node_name;
 	technic_run = function(pos, node)
 		local meta         = minetest.get_meta(pos)
 		local eu_input     = meta:get_int(tier.."_EU_input")
