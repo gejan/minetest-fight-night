@@ -1,10 +1,31 @@
 
 --= Hypericum
 
--- Hypericum Seed
+-- Plant
+-- *
 
-farming.register_plant("hypericum", {
+--items will be overwritten by farming
+
+--seed
+minetest.register_node("hypericum:seed_hypericum", {})
+
+minetest.register_node("hypericum:hypericum_1", {})
+
+minetest.register_node("hypericum:hypericum_2", {})
+
+minetest.register_node("hypericum:hypericum_3", {})
+
+minetest.register_node("hypericum:hypericum_4", {})
+
+
+-- Harvested Hypericum Blossom
+
+minetest.register_craftitem("hypericum:hypericum", {})
+
+
+farming.register_plant("hypericum:hypericum", {
 	description = "Hypericum Seed",
+	
 	inventory_image = "hypericum_seed.png",
 	steps = 4,	
 	minlight = 13,
@@ -12,17 +33,9 @@ farming.register_plant("hypericum", {
 })
 
 
--- Harvested Hypericum Blossom
-
-minetest.register_craftitem("hypericum:hypericum", {
-	description = "Hypericum",
-	inventory_image = "hypericum.png",
-})
-
-
---------------------------------------------------
 
 -- Tea
+-- *
 
 minetest.register_craftitem("hypericum:tea", {
 	description = "Hypericum Tea",
@@ -45,26 +58,6 @@ minetest.register_craft( {
 	},
 	replacements = {{"bucket:bucket_water", "bucket:bucket_empty"}}
 })
-
-
---------------------------------------------------------
-
-
--- Change Drop
-
---[[
-minetest.register_node(":farming:hypericum_4", {
-	drop = {
-		items = {
-			{items = {'farming:hypericum'}, rarity = 1},
-			{items = {'farming:hypericum'}, rarity = 3},
-			{items = {'farming:seed_hypericum'}, rarity = 1},
-			{items = {'farming:seed_hypericum'}, rarity = 3},
-		}
-	},
-})
-
---]]
 
 
 
