@@ -1,19 +1,21 @@
 -- Minetest Technic Light Mod
 -- by Gerald
 
+local modpath = minetest.get_modpath("technic_light")
 
+--lamps
+dofile(modpath.."/register_lamp.lua")
+dofile(modpath.."/lamps.lua")
+dofile(modpath.."/spotlight.lua")
 
-dofile(minetest.get_modpath("technic_light").."/register_lamp.lua")
+dofile(modpath.."/phosphorescent_abm.lua")
 
-dofile(minetest.get_modpath("technic_light").."/lamps.lua")
-dofile(minetest.get_modpath("technic_light").."/spotlight.lua")
+dofile(modpath.."/nodes.lua")
+dofile(modpath.."/crafting.lua")
 
-dofile(minetest.get_modpath("technic_light").."/phosphorescent_abm.lua")
-
-dofile(minetest.get_modpath("technic_light").."/nodes.lua")
-dofile(minetest.get_modpath("technic_light").."/crafting.lua")
-
-dofile(minetest.get_modpath("technic_light").."/flashlight.lua")
+if minetest.registered_tools["technic:flashlight"] then
+	dofile(modpath.."/flashlight.lua")
+end
 
 
 

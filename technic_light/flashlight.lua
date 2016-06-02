@@ -1,7 +1,3 @@
--- 
-
-if minetest.registered_tools["technic:flashlight"] then 
-
 
 local flashlight_max_charge = 30000
 
@@ -36,6 +32,3 @@ minetest.register_tool("technic_light:flashlight_off", {
 	end,
 
 })
-
-
-end

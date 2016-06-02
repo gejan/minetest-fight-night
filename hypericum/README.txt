@@ -6,8 +6,8 @@ Adds hypericum, which can be used to restore sanity
 Depends on:
 -Farming 		(https://forum.minetest.net/viewtopic.php?id=9019)
 -Beware The Dark 	(https://forum.minetest.net/viewtopic.php?f=11&t=12845)
--Player Effects		(https://forum.minetest.net/viewtopic.php?f=11&t=9689&hilit=player+effects)
--Default 		(minetest_game)
+-Sunburn		(https://forum.minetest.net/viewtopic.php?f=11&t=13199)
+-Player Effects		(https://forum.minetest.net/viewtopic.php?f=11&t=9689)
 
 Version: 0.5
 

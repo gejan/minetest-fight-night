@@ -4,7 +4,7 @@ Minetest Technic Light Mod
 Adds lamps, light interacting blocks and more
 
 Depends on:
--Technic (https://forum.minetest.net/viewtopic.php?f=11&t=2538&hilit=technic)
+-Technic (https://forum.minetest.net/viewtopic.php?f=11&t=2538)
 -Default (minetest_game)
 
 Version: 0.5
