@@ -7,7 +7,28 @@ local range = 4
 local node_name = "spotlight"
 local machine_name = "spotlight"
 
-local light_name = "technic:light"
+
+local light_name
+if minetest.registered_nodes["technic:light"] then
+  light_name = "technic:light"
+  minetest.register_alias("technic_light:light","technic:light")
+else
+  minetest.register_node("technic_light:light", {
+	drawtype = "glasslike",
+	tiles = {"technic_light.png"},
+	paramtype = "light",
+	groups = {not_in_creative_inventory=1},
+	drop = "",
+	walkable = false,
+	buildable_to = true,
+	sunlight_propagates = true,
+	light_source = default.LIGHT_MAX,
+	pointable = false,
+  })
+  light_name = "technic_light:light"
+end
+
+
 
 local function spotlight_place_light(pos, dir)
 	local even = false

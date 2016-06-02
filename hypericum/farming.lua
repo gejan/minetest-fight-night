@@ -18,8 +18,7 @@ minetest.register_node("hypericum:hypericum_3", {})
 minetest.register_node("hypericum:hypericum_4", {})
 
 
--- Harvested Hypericum Blossom
-
+-- harvested hypericum blossom
 minetest.register_craftitem("hypericum:hypericum", {})
 
 
@@ -30,6 +29,18 @@ farming.register_plant("hypericum:hypericum", {
 	steps = 4,	
 	minlight = 13,
 	maxlight = default.LIGHT_MAX
+})
+
+
+--Mapgen
+minetest.register_decoration({
+	deco_type = "simple",
+	place_on = "default:dirt_with_grass",
+	sidelen = 16,
+	fill_ratio = 0.006,
+	decoration = "hypericum:hypericum_4",
+	y_min = 25,
+	y_max = 45,
 })
 
 
