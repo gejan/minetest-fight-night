@@ -53,7 +53,7 @@ minetest.register_craftitem("hypericum:tea", {
 	inventory_image = "hypericum_tea.png",
 	stack_max = 1,
 	on_use = function (itemstack, player, pointing)
-		playereffects.apply_effect_type("photox", 120, player)
+		playereffects.apply_effect_type("photox", 180, player)
 		playereffects.apply_effect_type("sense", 10, player)
 		return ItemStack("vessels:drinking_glass")
 	end,
