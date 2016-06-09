@@ -22,17 +22,26 @@ WTFPL
 Textures: 
 
 Created by VanessaE edited by Gerald (WTFPL):
-hypericum_hypericum_1.png
-hypericum_hypericum_2.png
-hypericum_hypericum_3.png
-hypericum_hypericum_4.png
-hypericum_seed.png
+hypericum_hypericum_1a.png
+hypericum_hypericum_2a.png
+hypericum_hypericum_3a.png
+hypericum_hypericum_4a.png
 
 Created by TenPlus1 edited by Gerald:
 hypericum_tea.png
 
 Created by Gerald (WTFPL):
 hypericum_hypericum.png
+hypericum_hypericum_1.png
+hypericum_hypericum_2.png
+hypericum_hypericum_3.png
+hypericum_hypericum_4.png
+hypericum_hypericum_5.png
+hypericum_hypericum_6.png
+hypericum_hypericum_7.png
+hypericum_hypericum_8.png
+hypericum_seed.png
+
 
 
  

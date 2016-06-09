@@ -1,7 +1,7 @@
 local set_small_burn_factor = function(player)
 	--value set by sunburn
 	if sunburn.get_burn_factor(player) == 1 then	
-		sunburn.set_burn_factor(player,0.01)
+		sunburn.set_burn_factor(player,0.1)
 	end
 end 
 
@@ -16,7 +16,7 @@ function(player)
 	sunburn.set_burn_factor(player, 1.1) -- != 1
 end, 
 function(effect, player)
-	sunburn.set_burn_factor(player, 0.01)
+	sunburn.set_burn_factor(player, 0.1)
 end)
 
 playereffects.register_effect_type("sense", "Sense", "bewarethedark_eye.png", {}, 

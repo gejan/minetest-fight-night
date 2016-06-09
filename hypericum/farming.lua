@@ -38,7 +38,7 @@ minetest.register_decoration({
 	place_on = "default:dirt_with_grass",
 	sidelen = 16,
 	fill_ratio = 0.006,
-	decoration = "hypericum:hypericum_4",
+	decoration = "hypericum:hypericum_8",
 	y_min = 25,
 	y_max = 45,
 })
