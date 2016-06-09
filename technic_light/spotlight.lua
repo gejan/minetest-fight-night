@@ -66,9 +66,9 @@ end
 
 minetest.register_node("technic_light:"..node_name, {
 	description = tier.." Lamp",
-	tiles = {"technic_light_"..machine_name.."_side.png", "technic_light_"..machine_name.."_side.png",
+	tiles = {"technic_light_"..machine_name.."_side.png^[transformR90", "technic_light_"..machine_name.."_side.png^[transformR270",
 "technic_light_"..machine_name.."_side.png",
-"technic_light_"..machine_name.."_side.png",
+"technic_light_"..machine_name.."_side.png^[transformR180",
 "technic_light_"..machine_name.."_back.png",
 "technic_light_"..machine_name.."_front.png"},
 	paramtype2 = "facedir",
@@ -103,9 +103,9 @@ minetest.register_node("technic_light:"..node_name, {
 
 minetest.register_node("technic_light:"..node_name.."_on", {
 	description = tier.." Lamp",
-	tiles = {"technic_light_"..machine_name.."_side.png", "technic_light_"..machine_name.."_side.png",
+	tiles = {"technic_light_"..machine_name.."_side.png^[transformR90", "technic_light_"..machine_name.."_side.png^[transformR270",
 "technic_light_"..machine_name.."_side.png",
-"technic_light_"..machine_name.."_side.png",
+"technic_light_"..machine_name.."_side.png^[transformR180",
 "technic_light_"..machine_name.."_back.png",
 "technic_light_"..machine_name.."_front.png"},
 	paramtype2 = "facedir",

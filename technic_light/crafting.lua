@@ -66,6 +66,26 @@ minetest.register_craft({
         }
 })
 
+minetest.register_craft({
+	output = 'technic_light:lv_flat_lamp 3',
+	recipe = {
+        {'', '', ''},
+        {'', '', ''},
+        {'technic_light:lv_lamp', 'technic_light:lv_lamp', 'technic_light:lv_lamp'},
+        }
+})
+
+minetest.register_craft({
+	output = 'technic_light:mv_flat_lamp 3',
+	recipe = {
+        {'', '', ''},
+        {'', '', ''},
+        {'technic_light:mv_lamp', 'technic_light:mv_lamp', 'technic_light:mv_lamp'},
+        }
+})
+
+
+
 
 
 
